@@ -57,5 +57,47 @@ urlpatterns=[
 ]
 </pre>
 
-<h2>10.設定app路由</h2>
+<h2>10.view.py</h2>
 
+<pre>
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.template import loader
+from .models import Music
+import json
+from django.core.serializers import serialize
+
+def index(request):
+
+    return HttpResponse('Hello')
+
+def playmusic (request):
+
+    music = Music.objects.all()
+   
+    template = loader.get_template("ChineseApp/music_list.html")
+   
+    s = str('http://127.0.0.1:8080/ChineseApp/returnlist/')
+
+    context = {'music': music ,'url':s}
+    
+    t1 = template.render(context, request)
+    
+    return HttpResponse(t1)
+
+def returnlist(request,page_id):
+
+    print(str(page_id))
+
+    mugics=Music.objects.filter(page=page_id)
+    
+    raw_data=serialize('python',mugics)
+    
+    actual_data = [d['fields'] for d in raw_data]
+
+    output = json.dumps(actual_data)
+
+    return HttpResponse(output)
+
+
+</pre>
