@@ -19,5 +19,38 @@
 
 5.創建一個project
 
+  django-admin startproject MyMusicProject
+
 6.創建一個app
+
+  python manage.py startapp ChineseApp
+  
+專案架構
+
+ MusicProject
+    |
+    |
+    ---- ChineseApp
+    |         |
+    |         ------admin.py
+    |         |
+    |         ------apps.py
+    |         |
+    |         ------models.py
+    |         |
+    |         ------views.py
+    |
+    -----MusicProject
+    |         |
+    |         ------setting.py
+    |         |
+    |         ------urls.py
+    |         |
+    |         ------wsgi.py
+    |
+    ----------manage.py
+
+
+
+    
 
