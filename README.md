@@ -44,8 +44,18 @@ INSTALLED_APPS = [
 ]
 </pre>
 
-<h2>8.在app下新增urls.py</h2>
+<h2>8.在app下新增urls.py 並設定路由</h2>
 
+<pre>
+from django.conf.urls import url
+from . import views
+
+urlpatterns=[
+    url(r'^$',views.index , name='index'),
+    url(r'^/play/$',views.playmusic, name='playmusic'),
+    url(r'^/returnlist/(?P<page_id>[0-9]+)$',views.returnlist,name='returnlist'),
+]
+</pre>
 
 <h2>10.設定app路由</h2>
 
