@@ -1,22 +1,23 @@
 ## DjangoMusic
-##設定環境
-＊1.安裝virtualenv
+
+
+1.安裝virtualenv
   
   pip install virtualenv --proxy auhqwsg01.corpnet.auo.com:8080
   
-##2.創建一個虛擬環境
+2.創建一個虛擬環境
   
   python -m virutalenv venv
 
-##3.啟動虛擬環境
+3.啟動虛擬環境
   
   source activate
 
-##4.安裝django
+4.安裝django
   
   pip install django==1.11 --proxy auhqwsg01.corpnet.auo.com:8080
 
-#5.創建一個project
+5.創建一個project
 
-#6.創建一個app
+6.創建一個app
 
