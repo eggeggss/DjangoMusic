@@ -27,29 +27,7 @@
   
 <h2>7.專案架構</h2>
 
- MusicProject
-    |
-    |
-    ---- ChineseApp
-    |         |
-    |         ------admin.py
-    |         |
-    |         ------apps.py
-    |         |
-    |         ------models.py
-    |         |
-    |         ------views.py
-    |
-    -----MusicProject
-    |         |
-    |         ------setting.py
-    |         |
-    |         ------urls.py
-    |         |
-    |         ------wsgi.py
-    |
-    ----------manage.py
-
+![Alt Text](https://scontent.ftpe7-2.fna.fbcdn.net/v/t34.0-12/22052908_1873971256251290_2125481130_n.png?oh=1a5b0338b425f8d0d3448ac37fe5f947&oe=59CCB107)
 
 
     
