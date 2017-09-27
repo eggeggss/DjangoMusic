@@ -151,3 +151,19 @@ m10=Music(song_name='查克靠近 ',author_name='鄧紫棋',img='https://gss3.bd
 m10.save()
 </pre>
 
+<h2>14.setting.py</h2>
+加入
+<pre>
+PROJECT_DIR = os.path.dirname(__file__)
+
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    ("js", os.path.join(STATIC_ROOT,'js')),
+    ("css", os.path.join(STATIC_ROOT,'css')),
+)
+</pre>
+
+<h2>15.目錄架構</h2>
