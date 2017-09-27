@@ -87,4 +87,21 @@ def index(request):
 
 <h2>12.建Model</h2>
 <pre>
+from django.db import models
+import json
+# Create your models here.
+
+class Music(models.Model):
+    song_name=models.CharField(max_length=200)
+    author_name=models.CharField(max_length=200)
+    url=models.CharField(max_length=4096)
+    img=models.CharField(max_length=4096,default="")
+    page=models.IntegerField(default=0)
+    def __str__(self):
+        return self.song_name
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
+
 </pre>
