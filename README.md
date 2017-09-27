@@ -44,7 +44,18 @@ INSTALLED_APPS = [
 ]
 </pre>
 
-<h2>8.在app下新增urls.py 並設定路由</h2>
+<h2>8.建立project 的 urls.py </h2>
+<pre>
+from django.conf.urls import url,include
+from django.contrib import admin
+
+
+urlpatterns = [
+    url(r'^chineseapp',include('chineseapp.urls')),
+    url(r'^admin/', admin.site.urls),
+]
+</pre>
+<h2>9.在app下新增urls.py 並設定路由</h2>
 
 <pre>
 from django.conf.urls import url
