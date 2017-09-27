@@ -167,9 +167,7 @@ STATICFILES_DIRS = (
 </pre>
 
 <h2>15.目錄架構</h2>
-project 下新增 css
-              js
-              json
+project 下新增 static 下分別新增3目錄:css,js,json
 
 <h2>16.css下新增 dropload.css</h2>
 <pre>
