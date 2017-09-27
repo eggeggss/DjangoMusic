@@ -86,6 +86,7 @@ def index(request):
 <h2>11.執行python manage.py 0.0.0.0:8080 確認目前步驟無錯誤</h2>
 
 <h2>12.建Model</h2>
+<pre>
 from django.db import models
 import json
 
@@ -98,3 +99,4 @@ class Music(models.Model):
     def __str__(self):
         return self.song_name
 
+</pre>
