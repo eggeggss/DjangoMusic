@@ -70,6 +70,9 @@ urlpatterns=[
 ]
 </pre>
 
+![alt tag](https://github.com/eggeggss/DjangoMusic/blob/master/螢幕快照%202018-12-01%20下午10.55.36.png?raw=true)
+
+
 <h2>10.view.py</h2>
 
 <pre>
