@@ -114,7 +114,7 @@ class Music(models.Model):
 
 <h2>13.migrate model</h2>
 
-1.python manage.py makemigration chineseapp
+1.python manage.py makemigrations chineseapp
 
 2.python manage.py migrate
 
